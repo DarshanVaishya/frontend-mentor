@@ -22,6 +22,7 @@ body {
   max-width: var(--desktop-width);
   margin: 0 auto;
   height: 100vh;
+  line-height: 1.6;
 
   background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
@@ -50,6 +51,7 @@ body {
 }
 
 .hero-heading {
+  font-size: 28px;
   margin-bottom: 15px;
   font-weight: 900;
 }
@@ -67,6 +69,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -83,6 +87,49 @@ body {
   font-weight: 700;
 }
 
-.plan-link {
-  color: var(--bright-blue)
+.plan-price {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.plan-link:link,
+.plan-link:visited {
+  color: var(--bright-blue);
+  font-weight: 500;
+}
+
+.plan-link:hover,
+.plan-link:active {
+  font-weight: 700;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  margin-bottom: 30px;
+  background-color: var(--bright-blue);
+  padding: 12px 36px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 20px #3829E070;
+}
+
+.btn:hover,
+.btn:active {
+  opacity: 0.85;
+}
+
+.cancel-link:link,
+.cancel-link:visited {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.cancel-link:hover,
+.cancel-link:active {
+  opacity: 0.85;
 }
